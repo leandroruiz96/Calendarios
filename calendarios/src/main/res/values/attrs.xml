@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CalendarioComun">
+        <attr name="titleColor" format="color" />
+        <attr name="daysColor" format="color"/>
+        <attr name="selectedTextColor" format="color"/>
+        <attr name="drawablesColor" format="color"/>
+
+        <attr name="titleFont" format="string"/>
+        <attr name="daysFont" format="string"/>
+        <attr name="datesFont" format="string"/>
+
+        <attr name="titleSize" format="dimension"/>
+        <attr name="daysSize" format="dimension"/>
+    </declare-styleable>
+</resources>
