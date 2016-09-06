@@ -260,8 +260,10 @@ public class CalendarioComun extends View {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                float insideX = event.getX() - getLeft();
-                float insideY = event.getY() - getTop();
+                int[] positions = {0,0};
+                getLocationOnScreen(positions);
+                float insideX = event.getX() - positions[0];
+                float insideY = event.getY() - positions[1];
                 int ixX = columIndexFor(insideX);
                 int ixY = rowIndexFor(insideY);
                 if (ixY>1) {
