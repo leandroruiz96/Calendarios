@@ -261,9 +261,9 @@ public class CalendarioComun extends View {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 int[] positions = {0,0};
-                getLocationOnScreen(positions);
-                float insideX = event.getX() - positions[0];
-                float insideY = event.getY() - positions[1];
+                getLocationInWindow(positions);
+                float insideX = event.getRawX() - positions[0];
+                float insideY = event.getRawY() - positions[1];
                 int ixX = columIndexFor(insideX);
                 int ixY = rowIndexFor(insideY);
                 if (ixY>1) {
